@@ -10,8 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.0",
+    "@tailwindcss/vite": "^4.2.2",
     "nuxt": "^4.4.2",
+    "tailwindcss": "^4.2.2",
     "vue": "^3.5.30",
     "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/uil": "^1.2.3",
+    "@nuxt/icon": "^2.2.1"
   }
 }

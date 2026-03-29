@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'Arya';
+    src: url("../fonts/Arya-Regular.ttf");
+}
+@font-face {
+    font-family: 'Assistant';
+    src: url("../fonts/Assistant-VariableFont_wght.ttf");
+}
+*{
+    box-sizing: border-box;
+    font-family:'Assistant', sans-serif ;
+}
+.title{
+    font-family: 'Arya', sans-serif;
+}
+.icon.message{
+    width: 40px;
+    height: 40px;
+}
