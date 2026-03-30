@@ -2,6 +2,7 @@
 import LatestOrdersTable from '~/components/LatestOrdersTable.vue'
 import SalesChart from '~/components/SalesChart.vue'
 import StatsGrid from '~/components/StatsGrid.vue'
+import TopProducts from '~/components/TopProducts.vue'
 
 const data = await $fetch('/api/orders')
 const orders = data.orders
@@ -52,14 +53,13 @@ const latestOrders = [...orders]
 </script>
 
 <template>
-    <section class="container max-w-250 w-full ml-auto">
-
-        <SalesChart />
-
-        <StatsGrid :total-orders="totalOrders" :avg-order-value="avgOrderValue" :lifetime-value="lifetimeValue"
-            :top-products="topProducts" />
+    <section class="container max-w-250 w-full ml-auto flex flex-col gap-y-7.5">
+        <StatsGrid :total-orders="totalOrders" :avg-order-value="avgOrderValue" :lifetime-value="lifetimeValue" />
+        <div class="grid grid-cols-2 gap-x-3.5">
+            <SalesChart />
+            <TopProducts :top-products="topProducts" />
+        </div>
 
         <LatestOrdersTable :orders="latestOrders" />
-
     </section>
 </template>

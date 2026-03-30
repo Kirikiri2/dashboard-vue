@@ -32,9 +32,8 @@ const xFormatter = (tick: number) => chartData[tick]?.month ?? ''
 </script>
 
 <template>
-    <section>
-        <h2 class="text-xl mb-4">Sales Over Time</h2>
-
+    <section class="bg-white p-5 rounded-xl">
+        <h2 class="text-[20px] font-semibold">Sales Over Time</h2>
         <LineChart :data="chartData" index="month" :categories="categories" :x-formatter="xFormatter" />
     </section>
 </template>
