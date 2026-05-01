@@ -1,75 +1,121 @@
-# Nuxt Minimal Starter
+# E-Commerce Seller Dashboard (Nuxt 3)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Учебный проект по разработке административной панели продавца (dashboard) на основе макета из Figma.
+Создан на 3 курсе колледжа в рамках дисциплины JavaScript Frameworks.
 
-## Setup
+## О проекте
 
-Make sure to install dependencies:
+Проект представляет собой веб-приложение в формате dashboard для анализа данных интернет-магазина.
 
-```bash
-# npm
+Интерфейс включает ключевые элементы аналитики: статистику продаж, таблицы заказов, популярные товары и визуализацию данных.
+Проект реализован с использованием Nuxt 3 (Vue 3) с серверной частью (API) внутри приложения.
+
+**Figma макет:**
+https://www.figma.com/design/XMJTzJC7ZKtJABVOfHyWpg/E---Commerce-Seller-Dashboard--Community-?node-id=0-1
+
+## Демо
+
+![myapp/preview/ScreenDash1.png](myapp/preview/ScreenDash1.png)
+
+## Задача проекта
+
+ - реализовать dashboard по макету Figma
+ - освоить работу с фреймворком Nuxt
+ - реализовать компонентный подход
+ - организовать клиент-серверное взаимодействие внутри проекта
+ - визуализировать данные (таблицы, графики)
+
+## Функционал
+
+ - отображение статистики
+ - график продаж
+ - таблица последних заказов
+ - список популярных товаров
+ - навигационная панель
+ - получение данных через встроенный API (Nuxt server)
+ - работа с локальной JSON-базой
+
+## Технологии
+ - Nuxt 
+ - TypeScript
+ - Composition API
+ - CSS3
+ - встроенный сервер Nuxt
+
+## Роль в проекте
+
+**Выполненные задачи:**
+
+ - разработка интерфейса dashboard
+ - реализация компонентной архитектуры
+ - работа с Nuxt 3 
+ - создание API-эндпоинтов 
+ - подключение и обработка данных из JSON-базы
+ - реализация таблиц и графиков
+ - стилизация интерфейса
+
+## Что решает проект
+
+**Проект направлен на:**
+
+ - понимание архитектуры dashboard-приложений
+ - работу с данными и их визуализацией
+
+## Практикуемые навыки
+
+ - работа с Nuxt 3
+ - использование Composition API
+ - типизация с TypeScript
+ - создание и использование API внутри проекта
+ - работа с JSON как источником данных
+ - построение UI-дэшбордов
+ - компонентный подход во Vue
+
+## Структура проекта
+```
+myapp/
+├── app/
+│   ├── components/
+│   │   ├── StatsCard.vue
+│   │   ├── SalesChart.vue
+│   │   ├── LatestOrdersTable.vue
+│   │   └── ...
+│   ├── pages/
+│   │   └── index.vue
+│   ├── assets/
+│   └── types/
+│
+├── server/
+│   ├── api/
+│   │   └── orders.get.ts
+│   └── data/
+│       └── db.json
+│
+├── public/
+├── nuxt.config.ts
+└── package.json
+```
+
+## Запуск проекта
+```
+cd myapp
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+**После запуска проект будет доступен по адресу:**
+    http://localhost:3000
 
-Build the application for production:
+## Итог
 
-```bash
-# npm
-npm run build
+Проект стал практикой разработки современного dashboard-приложения с использованием Nuxt.
 
-# pnpm
-pnpm build
+**В ходе работы были освоены:**
 
-# yarn
-yarn build
+ - архитектура Nuxt приложений
+ - работа с компонентами и состоянием
+ - создание API внутри приложения
+ - визуализация данных
+ - работа с TypeScript во frontend
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Проект может служить базой для разработки административных панелей, аналитических сервисов и CRM-систем.
