@@ -98,7 +98,7 @@ myapp/
 
 ## Запуск проекта
 ```
-cd myapp
+cd dashboard-vue
 npm install
 npm run dev
 ```
